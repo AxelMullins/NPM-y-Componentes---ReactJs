@@ -1,0 +1,43 @@
+¿Qué es NPM?
+
+Es un gestor de dependencias/librerías para Javascript.
+Es el gestor por defecto del ecosistema de NodeJs. Al instalar NodeJs vamos a tener instalado NPM.
+
+Características:
+
+- Posee página web (explorar paquetes e instalarlos)
+- Se maneja por consola, ofrece distintos comandos que nos permiten instalar, actualizar, desinstalar, etc
+- Utiliza un archivo especial llamado "package.json" donde se declaran las dependencias y sus respectivas versiones.
+
+Usos:
+
+- Agregar dependencias.
+- Manejar versiones de dependencias (ir a una version anterior / actualizarla)
+- Ejecutar tareas y comandos
+- Reutilizar el paquete de código público para ahorrarnos tiempo.
+
+    Usos partuculares:
+
+        - En caso de que nos descarguemos un respositorio de otra persona, nunca nos vamos descargar "node_modules", vamos a tener el "package.json".
+        lo que tenemos que hacer es colocar el comando "npm install", lo que va a suceder es que se lee el archivo .json e instala todas las dependencias que encuentre.
+        (si no realizamos este paso el proyecto no va a funcionar correctamente)
+
+        - Para descargar una dependencia en particular debemos dirigirnos a "https://www.npmjs.com/" y buscar la librería que necesitemos,
+            - luego colocar el comando "npm install nombre"
+            - Si queremos instalar la version exacta del pauqete usamos "npm install nombre --save-exact"
+            - Si queremos instalar una version anterior "npm install nombre@1.01.1"
+
+        - Para desinstalar una dependencia en particular
+            - "npm uninstall nombre"
+        
+        - Para ejecutar tareas comunmente en ReactJs
+            - "npm run start" (para finalizarlo debemos aprentar en la consola "ctrl + c" + "s + enter")
+            - "npm run build" (nos optimiza nuestro proyecto para producción)
+
+    Otros:
+
+        - Actualizar todas las dependencias
+            - "npm update"
+
+        - Actualizar una dependencia en particular
+            - "npm update nombre"
